@@ -1,0 +1,28 @@
+$base-color: #2a2d36;
+$secondary-color: #0b0c10;
+$complementary-color: #15161a;
+
+:root{
+    background-color: $base-color;
+    color: white;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

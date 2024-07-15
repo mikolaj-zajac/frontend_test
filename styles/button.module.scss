@@ -1,0 +1,64 @@
+$base-color: #2a2d36;
+$secondary-color: #0b0c10;
+$complementary-color: #15161a;
+$faded-color: #a3a9b8;
+  
+
+.normal{
+    width:10rem;
+    height: 3rem;
+    background: transparent;
+    color: $faded-color;
+    border: 1px solid $faded-color;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 1rem;
+    font-size:0.9rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.normal:hover{
+    color:white;
+ }
+
+ .normal::before{
+    background: linear-gradient(90deg, rgba(189,119,29,1) 0%, rgba(254,158,35,1) 100%);
+    content: "";
+    width:10rem;
+    height: 3rem;
+    opacity: 0;
+    transition: .5s;
+    display: block;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    position: absolute;
+    z-index: -1;
+    
+
+ }
+ .normal:hover::before{
+    opacity: 1;
+ }
+ 
+
+.popup{
+    width:15rem;
+    height: 3rem;
+    border: 1px solid $base-color;
+    border-radius: 3px;
+    color: $faded-color;
+    background-color: $complementary-color;
+    font-weight: bold;
+    -webkit-transition: border 0.6s ease-out;
+    -moz-transition: border 0.6s ease-out;
+    -o-transition:border 0.6s ease-out;
+    transition: border 0.6s ease-out;
+}
+
+.popup:hover{
+    border: 1px solid white;
+    color: white;
+    
+}
